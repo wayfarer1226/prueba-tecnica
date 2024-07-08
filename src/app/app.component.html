@@ -1,0 +1,24 @@
+<div class="grid-container">
+  <input type="text" placeholder="Filter by name" (input)="onFilterChange($event)" />
+  <table class="grid-table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of (posts$ | async)">
+      <td>{{ post.id }}</td>
+      <td>{{ post.nombre }}</td>
+      <td>{{ post.descripcion }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="form-container">
+  <input type="text" placeholder="Nombre" [(ngModel)]="newPost.nombre" name="nombre" required />
+  <input type="text" placeholder="Descripcion" [(ngModel)]="newPost.descripcion" name="description" required/>
+  <button (click)="onAddPost()">Add Post</button>
+</div>

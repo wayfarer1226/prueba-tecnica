@@ -1,0 +1,55 @@
+.grid-container {
+    padding: 20px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-container input,
+  .form-container button {
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  .grid-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: 'Arial, sans-serif';
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .grid-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .grid-table th,
+  .grid-table td {
+    padding: 12px 15px;
+  }
+  
+  .grid-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .grid-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .grid-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .grid-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
